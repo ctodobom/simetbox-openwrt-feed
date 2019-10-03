@@ -13,7 +13,7 @@ PKG_RELEASE:=1
 PKG_FIXUP:=autoreconf
 PKG_INSTALL:=1
 
-PKG_VERSION:=0.14.5
+PKG_VERSION:=0.15.0
 PKG_REV:=v$(PKG_VERSION)
 PKG_REV:=HEAD
 
@@ -35,7 +35,9 @@ define Package/simetbox-openwrt-simet-ma
   SECTION:=net
   CATEGORY:=Network
   TITLE:=SIMETBox SIMET-2 measurement engine
-  DEPENDS:=+simetbox-openwrt-base +simetbox-openwrt-simet-lmapd +libcurl +curl +ca-bundle +!BUSYBOX_CONFIG_FLOCK:flock
+  DEPENDS:=+simetbox-openwrt-base
+  DEPENDS+=+libcurl +curl +ca-bundle +!BUSYBOX_CONFIG_FLOCK:flock
+  DEPENDS+=+simetbox-openwrt-simet-lmapd +simet-nping
   DEPENDS+=+!BUSYBOX_CONFIG_SHA256SUM:coreutils-sha256sum
   URL:=https://simet.nic.br
   USERID:=nicbr-simet:nicbr-simet
