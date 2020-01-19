@@ -15,9 +15,9 @@ PKG_INSTALL:=1
 
 PKG_VERSION:=0.13.3
 PKG_REV:=v$(PKG_VERSION)
-PKG_REV:=HEAD
+PKG_REV:=devel
 
-PKG_SOURCE_URL:=https://github.com/simetnicbr/simet-lmapd.git
+PKG_SOURCE_URL:=ssh://git@code.ceptro.br:7999/simet2/simet-lmapd.git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE:=$(PKG_SOURCE_SUBDIR).tar.gz
 PKG_SOURCE_PROTO:=git

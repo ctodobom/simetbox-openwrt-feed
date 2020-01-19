@@ -18,11 +18,11 @@ PKG_INSTALL:=1
 
 PKG_BUILD_PARALLEL:=0
 
-PKG_REV:=HEAD
+PKG_REV:=devel
 PKG_VERSION:=106
 PKG_SOURCE_VERSION:=$(PKG_REV)
 
-PKG_SOURCE_URL:=https://github.com/simetnicbr/simetbox-openwrt-base.git
+PKG_SOURCE_URL:=ssh://git@code.ceptro.br:7999/sib/simetbox-openwrt-base.git
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE:=$(PKG_SOURCE_SUBDIR).tar.gz
