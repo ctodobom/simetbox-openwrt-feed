@@ -36,9 +36,9 @@ define Package/simetbox-openwrt-simet-ma
   CATEGORY:=Network
   TITLE:=SIMETBox SIMET-2 measurement engine
   DEPENDS:=+simetbox-openwrt-base +simetbox-openwrt-simet-lmapd +libcurl +curl +ca-bundle +!BUSYBOX_CONFIG_FLOCK:flock
-  DEPENDS+=+!BUSYBOX_CONFIG_SHA256SUM:coreutils-sha256sum
   URL:=https://simet.nic.br
   USERID:=nicbr-simet:nicbr-simet
+#  DEPENDS+=+!BUSYBOX_CONFIG_SHA256SUM:coreutils-sha256sum
 #  MENU:=1
 endef
 
